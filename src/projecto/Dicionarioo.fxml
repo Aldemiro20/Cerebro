@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="553.0" prefWidth="651.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projecto.DicionariooController">
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="98.0" prefWidth="600.0" style="-fx-background-color: #2d75e8;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-1.0">
+         <children>
+            <ImageView fitHeight="98.0" fitWidth="137.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagens/Dictionary_1100px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="227.0" layoutY="30.0" prefHeight="39.0" prefWidth="223.0" text="Dicionario Vocal">
+               <font>
+                  <Font name="Bauhaus 93" size="27.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_fechar" layoutX="609.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="28.0" stylesheets="@dicas.css">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imagens/Delete_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children></AnchorPane>
+      <AnchorPane layoutY="495.0" prefHeight="64.0" prefWidth="651.0" style="-fx-background-color: #2d75e8;">
+         <children>
+            <Label layoutX="203.0" layoutY="14.0" text="Para mais Informaçoes contacte a Guia">
+               <font>
+                  <Font name="Batang" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="97.0" prefHeight="399.0" prefWidth="651.0" style="-fx-background-color: #fff;">
+         <children>
+            <Label contentDisplay="RIGHT" layoutX="165.0" layoutY="66.0" prefHeight="32.0" prefWidth="349.0" text="Pesquise Palavras do Dicionario digitando acima" textFill="GREY">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imagens/Microphone_64px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <ImageView fitHeight="204.0" fitWidth="233.0" layoutX="218.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagens/Audio%20Wave_100px.png" />
+               </image></ImageView>
+            <TextField fx:id="textp" layoutX="201.0" layoutY="16.0" prefHeight="25.0" prefWidth="238.0" />
+            <Label layoutX="85.0" layoutY="16.0" text="Palavra">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Button fx:id="buttonp" layoutX="492.0" layoutY="16.0" mnemonicParsing="false" stylesheets="@Efeito.css" text="Pesquisar" />
+         </children>
+      </AnchorPane>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>

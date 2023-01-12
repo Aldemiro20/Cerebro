@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="626.0" prefWidth="610.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projecto.GuiaController">
+    <stylesheets>
+        <URL value="@guia.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="112.0" prefWidth="764.0" style="-fx-background-color: #2d75e8;">
+         <children>
+            <ImageView fitHeight="112.0" fitWidth="167.0" layoutX="-1.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagens/Home_1100px.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btn_fechar" layoutX="722.0" layoutY="1.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="28.0" stylesheets="@dicas.css">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imagens/Delete_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label layoutX="240.0" layoutY="47.0" text="Guia de Utilização do Cérebro">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-2.0" layoutY="544.0" prefHeight="82.0" prefWidth="766.0" style="-fx-background-color: #2d75e8;">
+         <children>
+            <Label layoutX="176.0" layoutY="14.0" text="Os teus problemas ganham voz com o cérebro">
+               <font>
+                  <Font name="Batang" size="19.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <Label layoutX="266.0" layoutY="131.0" text="Seja Bem Vindo ao Cérebro " textFill="GREY">
+         <font>
+            <Font name="Batang" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="267.0" layoutY="158.0" prefHeight="34.0" prefWidth="223.0" text="Oque é, e como usar?" textFill="GREY">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Separator prefWidth="200.0" />
+      <Separator layoutX="27.0" layoutY="199.0" prefHeight="3.0" prefWidth="700.0" />
+      <Separator layoutX="32.0" layoutY="345.0" prefHeight="3.0" prefWidth="693.0" />
+      <Label layoutX="178.0" layoutY="367.0" text="O Cérebro está aberto para sugestões e críticas" textFill="GREY">
+         <font>
+            <Font name="Batang" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="395.0" text="Se alguma coisa não gostaste, ou queres que tenha alguma coisa, partilha está informação apartir da nossa pagina" textFill="GREY">
+         <font>
+            <Font name="Batang" size="13.0" />
+         </font>
+      </Label>
+      <Hyperlink contentDisplay="TOP" layoutX="286.0" layoutY="444.0" text="Facebook">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagens/Facebook_48px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Hyperlink>
+      <Hyperlink contentDisplay="TOP" layoutX="399.0" layoutY="444.0" text="Instagram">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagens/Instagram_48px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Hyperlink>
+      <Label layoutX="25.0" layoutY="210.0" text="O cérebro é um sistema que usa sintetizador de voz, ele foi projectado para ajudar as pessoas nas pesquisas de palavras e nos calculos.">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font></Label>
+      <Label layoutX="25.0" layoutY="227.0" text="No cérebro, nós temos uma calculadora e um dicionario que funcionam com voz, aquilo é voce digita e ele responde.">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font></Label>
+      <Label layoutX="28.0" layoutY="255.0" text="Dicionario:">
+         <font>
+            <Font name="Batang" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="293.0" text="Calculadora:">
+         <font>
+            <Font name="Batang" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="143.0" layoutY="257.0" text="Click no botão do dicionario no menu, introduz a palavra pretendida e click em pesquisar" />
+      <Label layoutX="150.0" layoutY="295.0" text="Click no botão da calculadora no menu, digite os numeros e click em igual" />
+   </children>
+</AnchorPane>

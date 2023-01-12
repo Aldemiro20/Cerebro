@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Projecto.jnlp">
+  <information>
+    <title>Projecto</title>
+    <vendor>MG</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  <shortcut><desktop/></shortcut>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Projecto.jar" size="13048471" download="eager" />
+    <jar href="lib\AnimateFX-1.2.0.jar" size="85823" download="eager" />
+    <jar href="lib\cgjsapi.jar" size="429647" download="eager" />
+    <jar href="lib\packet.jar" size="1944579" download="eager" />
+    <jar href="lib\sqljdbc4-3.0.jar" size="536204" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Projecto" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="projecto.ProgressBar"  name="Projecto" />
+  <update check="always"/>
+</jnlp>

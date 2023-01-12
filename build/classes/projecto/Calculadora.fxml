@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="490.0" prefWidth="435.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projecto.CalculadoraController">
+    <stylesheets>
+        <URL value="@calculadora.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="65.0" prefWidth="435.0" style="-fx-background-color: #2d75e8;">
+         <children>
+            <ImageView fitHeight="74.0" fitWidth="106.0" layoutX="8.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagens/Calculator_1001px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="131.0" layoutY="27.0" text="Calculadora Via Voz">
+               <font>
+                  <Font name="Bauhaus 93" size="19.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_fechar" layoutX="393.0" layoutY="10.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="28.0" stylesheets="@dicas.css">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imagens/Delete_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane id="label" layoutX="-1.0" layoutY="74.0" prefHeight="366.0" prefWidth="435.0" stylesheets="@calculadora.css">
+         <children>
+            <AnchorPane layoutX="-1.0" layoutY="104.0" prefHeight="312.0" prefWidth="435.0" style="-fx-background-color: #2d75e8;">
+               <children>
+                  <Button fx:id="seteButton" layoutX="14.0" layoutY="8.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="56.0" stylesheets="@calculadora.css" text="7">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="oitoButton" layoutX="77.0" layoutY="8.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="56.0" stylesheets="@calculadora.css" text="8">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="quatroButton" layoutX="14.0" layoutY="68.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="56.0" stylesheets="@calculadora.css" text="4">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="umButton" layoutX="14.0" layoutY="131.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="56.0" stylesheets="@calculadora.css" text="1">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="cincoButton" layoutX="77.0" layoutY="68.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="56.0" stylesheets="@calculadora.css" text="5">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="doisButton" layoutX="77.0" layoutY="131.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="56.0" stylesheets="@calculadora.css" text="2">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="tresButton" layoutX="142.0" layoutY="131.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="56.0" stylesheets="@calculadora.css" text="3">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="14.0" layoutY="192.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="56.0" stylesheets="@calculadora.css" text=".">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="seisButton" layoutX="142.0" layoutY="68.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="56.0" stylesheets="@calculadora.css" text="6">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="noveButton" layoutX="142.0" layoutY="8.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="56.0" stylesheets="@calculadora.css" text="9">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="zeroButton" layoutX="77.0" layoutY="192.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="56.0" stylesheets="@calculadora.css" text="0">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="igualButton" layoutX="142.0" layoutY="192.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="56.0" stylesheets="@calculadora.css" text="=">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="284.0" layoutY="70.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="56.0" stylesheets="@calculadora.css" text=")">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="350.0" layoutY="8.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="56.0" stylesheets="@calculadora.css" text="∜">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="218.0" layoutY="70.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="56.0" stylesheets="@calculadora.css" text="(">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="284.0" layoutY="8.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="56.0" stylesheets="@calculadora.css" text="∛">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="218.0" layoutY="8.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="56.0" stylesheets="@calculadora.css" text="√">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="somaButton" layoutX="218.0" layoutY="131.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="56.0" stylesheets="@calculadora.css" text="+">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="subtrairButton" layoutX="284.0" layoutY="131.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="56.0" stylesheets="@calculadora.css" text="-">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="350.0" layoutY="70.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="56.0" stylesheets="@calculadora.css" text="x^2">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="350.0" layoutY="131.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="56.0" stylesheets="@calculadora.css" text="^">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="dividirButton" layoutX="284.0" layoutY="193.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="56.0" stylesheets="@calculadora.css" text="/">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="350.0" layoutY="193.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="56.0" stylesheets="@calculadora.css" text="!">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="multiplicarButton" layoutX="218.0" layoutY="193.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="56.0" stylesheets="@calculadora.css" text="*">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="14.0" layoutY="248.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="56.0" stylesheets="@calculadora.css" text="π">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="218.0" layoutY="248.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="56.0" stylesheets="@calculadora.css" text="Tan">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="77.0" layoutY="248.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="56.0" stylesheets="@calculadora.css" text="Sin">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="142.0" layoutY="248.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="56.0" stylesheets="@calculadora.css" text="Cos">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="284.0" layoutY="248.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="56.0" stylesheets="@calculadora.css" text="\% ">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="apagarButton" layoutX="350.0" layoutY="248.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="56.0" stylesheets="@calculadora.css" text="Del">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <TextField fx:id="textfield" alignment="CENTER_RIGHT" layoutX="2.0" prefHeight="103.0" prefWidth="435.0">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

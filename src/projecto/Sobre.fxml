@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="318.0" prefWidth="433.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projecto.SobreController">
+    <stylesheets>
+        <URL value="@sobre.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="116.0" fitWidth="135.0" layoutX="7.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagens/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="189.0" layoutY="23.0" text="Cérebro">
+         <font>
+            <Font name="Arial" size="46.0" />
+         </font>
+      </Label>
+      <Label layoutX="7.0" layoutY="-24.0" text="Label" />
+      <Label layoutX="156.0" layoutY="76.0" text="Sistema de estudo">
+         <font>
+            <Font name="Arial" size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="7.0" layoutY="134.0" text="Sistema de estudo, que funciona com sintetizador de voz">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="167.0" text="Desenvolvido por: ">
+         <font>
+            <Font name="Batang" size="18.0" />
+         </font></Label>
+      <Label layoutX="15.0" layoutY="201.0" text="Data:">
+         <font>
+            <Font name="Batang" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="215.0" layoutY="164.0" prefHeight="26.0" prefWidth="152.0" text="Aldemiro Valentim">
+         <font>
+            <Font name="Batang" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="217.0" layoutY="198.0" prefHeight="26.0" prefWidth="87.0" text="20/11/2018">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_fechar" layoutX="389.0" layoutY="6.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="28.0" stylesheets="@dicas.css">
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagens/Delete_48px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <AnchorPane layoutY="250.0" prefHeight="68.0" prefWidth="433.0" style="-fx-background-color: #2d75e8;" />
+   </children>
+</AnchorPane>

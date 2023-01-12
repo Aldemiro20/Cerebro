@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="274.0" style=" " xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projecto.DefinicoesController">
+   <children>
+      <AnchorPane fx:id="topbar" prefHeight="65.0" prefWidth="340.0" style="-fx-background-color: #2d75e8;">
+         <children>
+            <ImageView fx:id="btn_audio" fitHeight="45.0" fitWidth="52.0" layoutX="34.0" layoutY="7.0" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagens/Audio_50px.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btn_video" fitHeight="45.0" fitWidth="45.0" layoutX="148.0" layoutY="7.0" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagens/Movie_50px.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btn_definicoes" fitHeight="45.0" fitWidth="52.0" layoutX="254.0" layoutY="6.0" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagens/Engineering_50px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="d_definicoes" layoutY="83.0" prefHeight="317.0" prefWidth="340.0" style="-fx-background-color: #2d75e8;" />
+      <AnchorPane fx:id="d_audio" layoutX="-1.0" layoutY="83.0" prefHeight="317.0" prefWidth="340.0" style="-fx-background-color: #2d75e8;">
+         <children>
+            <Label layoutX="78.0" layoutY="34.0" text="Configuração de Audio" textFill="GHOSTWHITE">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="104.0" text="Voz " textFill="GHOSTWHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane fx:id="d_video" layoutY="83.0" prefHeight="317.0" prefWidth="340.0" style="-fx-background-color: #2d75e8;">
+         <children>
+            <Label layoutX="78.0" layoutY="20.0" text="Configuração de Video" textFill="GHOSTWHITE">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="90.0" text=" Dicionario visual" textFill="GHOSTWHITE">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="146.0" text="Calcualdora visual" textFill="GHOSTWHITE">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
